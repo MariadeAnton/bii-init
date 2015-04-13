@@ -1,12 +1,12 @@
 //md5 code goes here
+#include "openssl/md5.h"
 #include <stdio.h>
 #include <string.h>
-#include "openssl/md5.h"
 
 int main()
 {
     unsigned char digest[MD5_DIGEST_LENGTH];
-    char string[] = "happy";
+    char string[] = "hello biicode!";
 
     MD5((unsigned char*)&string, strlen(string), (unsigned char*)&digest);    
 
